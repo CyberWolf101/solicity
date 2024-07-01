@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400..700&family=Indie+Flower&display=swap');
+:root {
+    --nav-black: #181c25;
+    --nav-btn-color: #dc543a;
+    --bg2-dark: #353432;
+    --cream: #cfd7da; 
+    --light-bg: #f4f4f4;
+    --light-bg2: #e5e5e5;
+
+    --dark: #2c303b;
+}
+
+.light-bg{
+    background-color: var(--light-bg);
+}
+.light-bg2{
+    background-color: var(--light-bg2);
+}
+.caveat {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.architects{
+    font-family: "Architects Daughter", cursive;
+    font-style: normal;
+  }
+  
+.flower {
+    font-family: "Indie Flower", cursive;
+    font-style: normal;
+}
+.cream{
+    background-color: var(--cream);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--nav-black);
+    padding: 9px;
+    color: white;
+}
+
+nav img {
+  height: 24px;
+    
+}
+
+nav button {
+    background-color: var(--nav-btn-color);
+    padding: 7px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2;
+    font-size: 12px;
+    
+}
+
+
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 100%; /* 3 images */
+    animation: slide linear 35s infinite;
+}
+
+.slides img {
+    width:100%;
+    height: 150px;
+    margin: 10px;
+}
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+   40% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform:  translateX(100);
+    }
+    80% {
+        transform:  translateX(200);
+    }
+    80% {
+        transform:  translateX(300);
+    }
+}
+
+
+.methods{
+    position: relative;
+}
+.methods .button-div{
+    position: absolute;
+    /* background-color: #dc543a; */
+    bottom: 120px;
+    width: 100%;
+    height: 50px;
+    /* height: 100%; */
+
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    height: 70%;
+}
+
+.slider {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    display: block;
+}
+
+.up img, .down img {
+    animation: slide-up 18s linear infinite;
+}
+
+.down img {
+    animation: slide-down 18s linear infinite;
+}
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(80%);
+    }
+}

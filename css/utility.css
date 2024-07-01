@@ -1,0 +1,52 @@
+.line {
+    background-color: rgba(112, 128, 144, 0.26);
+    height: 1px;
+    width: 100%;
+}
+
+.faint {
+    color: var(--faint);
+}
+.faintx2 {
+    color: #aeb2bd9e;
+}
+.text2 {
+    color: var(--secondary);
+}
+
+
+.btn-pry {
+    background:var(--btn-color);
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_spaced {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small {
+    font-size: 14px;
+}
+
+.small {
+    font-size: 11px;
+}
+.letterSpaced{
+    letter-spacing: 0.87px;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
