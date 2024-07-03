@@ -1,0 +1,150 @@
+@media screen and (min-width:900px) {
+    .angry-people {
+        display: flex;
+    }
+
+
+    .angry-people .arg {
+        /* height: 450px; */
+
+    }
+
+    .angry-people .people {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .angry-people .people img {
+        height: 300px;
+
+    }
+
+    .slider {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slides {
+        display: flex;
+        width: 100%;
+        /* 3 images */
+        animation: slide linear 35s infinite;
+    }
+
+    .slides img {
+        width: 100%;
+        height: 150px;
+        margin: 10px;
+    }
+
+
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        20% {
+            transform: translateX(-100%);
+        }
+
+        40% {
+            transform: translateX(-159%);
+        }
+
+        60% {
+            transform: translateX(-250%);
+        }
+
+        80% {
+            transform: translateX(100%);
+        }
+
+        80% {
+            transform: translateX(150%);
+        }
+
+        80% {
+            transform: translateX(250%);
+        }
+
+
+
+    }
+
+
+
+    .methods {
+        position: relative;
+    }
+
+    .methods .button-div {
+        position: absolute;
+        /* background-color: #dc543a; */
+        bottom: 80px;
+        width: 100%;
+        height: 50px;
+        /* height: 100%; */
+
+    }
+
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 70%;
+        /* background-color: red; */
+    }
+
+    .container .new {
+        display: block;
+
+    }
+
+    .slider2 {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slider2 img {
+        width: 200px;
+        display: block;
+    }
+
+    .up img,
+    .down img {
+        animation: slide-up 18s linear infinite;
+    }
+
+    .down img {
+        animation: slide-down 18s linear infinite;
+    }
+
+
+    .token {
+        height: 420px;
+        width: 50%;
+        margin-top: 190px;
+
+    }
+
+    .other {
+        padding: 2px 315px;
+    }
+
+
+}
+
+@media screen and (max-width:899px) {
+    .angry-people .people {
+        display: none;
+    }
+
+    .container .new {
+        display: none;
+
+    }
+}
